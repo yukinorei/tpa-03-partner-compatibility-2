@@ -1,0 +1,61 @@
+body {
+  font-family: sans-serif;
+}
+
+code {
+  font-size: 0.8em;
+}
+
+button {
+  font-size: 0.9em;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-bottom: 50px;
+  width: 800px;
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+.answer {
+  background-color: lightyellow !important;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+th {
+  text-align: left;
+}
+
+th,
+td {
+  border: 1px solid black;
+  width: 50%;
+  height: 25px;
+  padding: 7px;
+  vertical-align: top;
+}
+
+table.data-table {
+  width: 500px;
+  min-width: auto;
+}
+
+.data-table th, .data-table td {
+  min-width: 100px;
+}
+
+hr {
+  margin-top: 50px;
+}

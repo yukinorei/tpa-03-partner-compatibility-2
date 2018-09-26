@@ -1,0 +1,26 @@
+#container {
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#container form {
+    text-align: left;
+}
+
+#container form fieldset {
+    padding-bottom: 30px;
+}
+
+#container form input {
+    margin: 10px 10px;
+}
+
+.results h3 {
+  background-color: papayawhip;
+}
+
+.question-instruction {
+    font-size: 0.8em;
+}
