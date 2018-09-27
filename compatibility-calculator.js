@@ -3,7 +3,8 @@ const { candidates } = require('./data/candidates-data.js');
 const calculateScore = (candidateValue, submissionValue) => {
   if (candidateValue === submissionValue) {
     return 2;
-  } else if ((candidateValue + 1 === submissionValue) || (candidateValue - 1 === submissionValue)) {
+  }
+  if ((candidateValue + 1 === submissionValue) || (candidateValue - 1 === submissionValue)) {
     return 1;
   }
   return 0;
@@ -18,11 +19,10 @@ const calculateBestMatch = function(quizSubmissions) {
 
     candidate.forEach((questionGroup, g) => {
       questionGroup.forEach((question, q) => {
-        console.log(question);
         if (question.name.startsWith('question')) {
           const submission = quizSubmissions[g][q];
-          const candidateValue = parseInt(question.value);
-          const submissionValue = parseInt(submission.value);
+          const candidateValue = parseInt(question.value, 10);
+          const submissionValue = parseInt(submission.value, 10);
 
           candidateScore += calculateScore(candidateValue, submissionValue);
         }
